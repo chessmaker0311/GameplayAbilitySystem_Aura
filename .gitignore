@@ -1,0 +1,16 @@
+Banaries
+DerivedDataCache
+Intermadiate
+Saved
+Build
+
+.vscode
+.vs
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.sin
+*.suo
+*.xcodeproj
+*.xcworkspace
