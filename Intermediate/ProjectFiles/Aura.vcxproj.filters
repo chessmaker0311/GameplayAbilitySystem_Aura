@@ -25,6 +25,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
@@ -51,6 +54,15 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAttributeSet.cpp">
       <Filter>Source\Aura\Private\AbilitySystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\Aura\Private\AbilitySystem\ModMagCalc">
+      <UniqueIdentifier>{07CB3620-4FAE-3564-9604-7B08CD93389D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\ModMagCalc\MMC_MaxHealth.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\ModMagCalc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\ModMagCalc\MMC_MaxMana.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\ModMagCalc</Filter>
     </ClCompile>
     <Filter Include="Source\Aura\Private\Actor">
       <UniqueIdentifier>{051A7246-5551-3D03-BC41-3B84493932DF}</UniqueIdentifier>
@@ -79,6 +91,9 @@
     <Filter Include="Source\Aura\Private\Interaction">
       <UniqueIdentifier>{8600DADF-1C2F-3B4E-851E-5CF3B1B94879}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\Interaction\CombatInterface.cpp">
+      <Filter>Source\Aura\Private\Interaction</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\Interaction\EnemyInterface.cpp">
       <Filter>Source\Aura\Private\Interaction</Filter>
     </ClCompile>
@@ -127,6 +142,15 @@
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAttributeSet.h">
       <Filter>Source\Aura\Public\AbilitySystem</Filter>
     </ClInclude>
+    <Filter Include="Source\Aura\Public\AbilitySystem\ModMagCalc">
+      <UniqueIdentifier>{8949CBB1-5558-3254-991D-8D941786DDCB}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ModMagCalc\MMC_MaxHealth.h">
+      <Filter>Source\Aura\Public\AbilitySystem\ModMagCalc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ModMagCalc\MMC_MaxMana.h">
+      <Filter>Source\Aura\Public\AbilitySystem\ModMagCalc</Filter>
+    </ClInclude>
     <Filter Include="Source\Aura\Public\Actor">
       <UniqueIdentifier>{FB1C9C32-0E54-3D43-B3D9-FD86BB6EBCF1}</UniqueIdentifier>
     </Filter>
@@ -154,6 +178,9 @@
     <Filter Include="Source\Aura\Public\Interaction">
       <UniqueIdentifier>{AC69F4E0-FE2C-3C00-9744-FF5ECD46407C}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\Interaction\CombatInterface.h">
+      <Filter>Source\Aura\Public\Interaction</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\Interaction\EnemyInterface.h">
       <Filter>Source\Aura\Public\Interaction</Filter>
     </ClInclude>
