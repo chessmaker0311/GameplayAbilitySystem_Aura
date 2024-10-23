@@ -46,14 +46,29 @@
     <Filter Include="Source\Aura\Private">
       <UniqueIdentifier>{614644D7-6FA7-303B-9CB5-F9579003D315}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AuraAssetManager.cpp">
+      <Filter>Source\Aura\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AuraGameplayTags.cpp">
+      <Filter>Source\Aura\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem">
       <UniqueIdentifier>{E12B047D-3563-3B0F-A31F-6CA534A3F38C}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAbilitySystemComponent.cpp">
       <Filter>Source\Aura\Private\AbilitySystem</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAbilitySystemLibrary.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAttributeSet.cpp">
       <Filter>Source\Aura\Private\AbilitySystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\Aura\Private\AbilitySystem\Data">
+      <UniqueIdentifier>{1DE59CCC-C5AD-3B72-B94D-B45AD4BE9D00}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Data\AttributeInfo.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Data</Filter>
     </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\ModMagCalc">
       <UniqueIdentifier>{07CB3620-4FAE-3564-9604-7B08CD93389D}</UniqueIdentifier>
@@ -124,6 +139,9 @@
     <Filter Include="Source\Aura\Private\UI\WidgetController">
       <UniqueIdentifier>{D768110E-7A16-3E45-95C4-8523946E0A11}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\UI\WidgetController\AttributeMenuWidgetController.cpp">
+      <Filter>Source\Aura\Private\UI\WidgetController</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\UI\WidgetController\AuraWidgetController.cpp">
       <Filter>Source\Aura\Private\UI\WidgetController</Filter>
     </ClCompile>
@@ -133,14 +151,29 @@
     <Filter Include="Source\Aura\Public">
       <UniqueIdentifier>{812D085E-218E-32A1-B6D9-A817B3D0072A}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AuraAssetManager.h">
+      <Filter>Source\Aura\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AuraGameplayTags.h">
+      <Filter>Source\Aura\Public</Filter>
+    </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem">
       <UniqueIdentifier>{E77883A5-D48A-34F9-8FEA-EA980135BDF7}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAbilitySystemComponent.h">
       <Filter>Source\Aura\Public\AbilitySystem</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAbilitySystemLibrary.h">
+      <Filter>Source\Aura\Public\AbilitySystem</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAttributeSet.h">
       <Filter>Source\Aura\Public\AbilitySystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\AbilitySystem\Data">
+      <UniqueIdentifier>{FF426A13-05E2-3736-B7C4-5F4B5E95E426}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\AttributeInfo.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Data</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\ModMagCalc">
       <UniqueIdentifier>{8949CBB1-5558-3254-991D-8D941786DDCB}</UniqueIdentifier>
@@ -211,6 +244,9 @@
     <Filter Include="Source\Aura\Public\UI\WidgetController">
       <UniqueIdentifier>{3BCD7258-E95C-3A59-ACAC-9F88D343DD76}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\UI\WidgetController\AttributeMenuWidgetController.h">
+      <Filter>Source\Aura\Public\UI\WidgetController</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\UI\WidgetController\AuraWidgetController.h">
       <Filter>Source\Aura\Public\UI\WidgetController</Filter>
     </ClInclude>
