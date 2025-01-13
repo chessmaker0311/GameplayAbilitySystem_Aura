@@ -64,6 +64,15 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAttributeSet.cpp">
       <Filter>Source\Aura\Private\AbilitySystem</Filter>
     </ClCompile>
+    <Filter Include="Source\Aura\Private\AbilitySystem\Abilities">
+      <UniqueIdentifier>{DFA34C06-BED9-3B4B-AC97-7DAF6B5D85CD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraGameplayAbility.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraProjectileSpell.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\Data">
       <UniqueIdentifier>{1DE59CCC-C5AD-3B72-B94D-B45AD4BE9D00}</UniqueIdentifier>
     </Filter>
@@ -85,6 +94,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\Actor\AuraEffectActor.cpp">
       <Filter>Source\Aura\Private\Actor</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\Actor\AuraProjectile.cpp">
+      <Filter>Source\Aura\Private\Actor</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\Character">
       <UniqueIdentifier>{02E07034-0FE1-3A7C-A01D-10DA4A11D5EE}</UniqueIdentifier>
     </Filter>
@@ -102,6 +114,15 @@
     </Filter>
     <ClCompile Include="..\..\Source\Aura\Private\Game\AuraGameModeBase.cpp">
       <Filter>Source\Aura\Private\Game</Filter>
+    </ClCompile>
+    <Filter Include="Source\Aura\Private\Input">
+      <UniqueIdentifier>{C3AD8B08-3AA0-3E95-A897-C6703F5DA59C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\Input\AuraInputComponent.cpp">
+      <Filter>Source\Aura\Private\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\Input\AuraInputConfig.cpp">
+      <Filter>Source\Aura\Private\Input</Filter>
     </ClCompile>
     <Filter Include="Source\Aura\Private\Interaction">
       <UniqueIdentifier>{8600DADF-1C2F-3B4E-851E-5CF3B1B94879}</UniqueIdentifier>
@@ -169,6 +190,15 @@
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAttributeSet.h">
       <Filter>Source\Aura\Public\AbilitySystem</Filter>
     </ClInclude>
+    <Filter Include="Source\Aura\Public\AbilitySystem\Abilities">
+      <UniqueIdentifier>{86B8CD5C-F5F0-31A8-90A9-E38073EC176F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraGameplayAbility.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\Data">
       <UniqueIdentifier>{FF426A13-05E2-3736-B7C4-5F4B5E95E426}</UniqueIdentifier>
     </Filter>
@@ -190,6 +220,9 @@
     <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraEffectActor.h">
       <Filter>Source\Aura\Public\Actor</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraProjectile.h">
+      <Filter>Source\Aura\Public\Actor</Filter>
+    </ClInclude>
     <Filter Include="Source\Aura\Public\Character">
       <UniqueIdentifier>{5BC97E21-9AE0-3A5A-B1AE-66CDA5B00EB5}</UniqueIdentifier>
     </Filter>
@@ -207,6 +240,15 @@
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\Game\AuraGameModeBase.h">
       <Filter>Source\Aura\Public\Game</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\Input">
+      <UniqueIdentifier>{990A1480-E998-3054-91AE-4C9BB6814F97}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\Input\AuraInputComponent.h">
+      <Filter>Source\Aura\Public\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\Input\AuraInputConfig.h">
+      <Filter>Source\Aura\Public\Input</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\Interaction">
       <UniqueIdentifier>{AC69F4E0-FE2C-3C00-9744-FF5ECD46407C}</UniqueIdentifier>
