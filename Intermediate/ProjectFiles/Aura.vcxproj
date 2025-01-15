@@ -252,6 +252,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Data\CharacterClassInfo.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\ModMagCalc\MMC_MaxHealth.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -356,6 +361,7 @@
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AbilityTasks\TargetDataUnderMouse.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\AttributeInfo.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\CharacterClassInfo.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ModMagCalc\MMC_MaxHealth.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ModMagCalc\MMC_MaxMana.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraEffectActor.h"/>

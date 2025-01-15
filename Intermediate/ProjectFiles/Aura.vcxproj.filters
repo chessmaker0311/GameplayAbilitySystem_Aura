@@ -85,6 +85,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Data\AttributeInfo.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Data</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Data\CharacterClassInfo.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Data</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\ModMagCalc">
       <UniqueIdentifier>{07CB3620-4FAE-3564-9604-7B08CD93389D}</UniqueIdentifier>
     </Filter>
@@ -215,6 +218,9 @@
       <UniqueIdentifier>{FF426A13-05E2-3736-B7C4-5F4B5E95E426}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\AttributeInfo.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\CharacterClassInfo.h">
       <Filter>Source\Aura\Public\AbilitySystem\Data</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\ModMagCalc">
