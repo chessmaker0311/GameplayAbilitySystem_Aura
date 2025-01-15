@@ -73,6 +73,12 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraProjectileSpell.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <Filter Include="Source\Aura\Private\AbilitySystem\AbilityTasks">
+      <UniqueIdentifier>{C3A9FB8B-DD1A-3A80-8CF7-326C27A917BC}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AbilityTasks\TargetDataUnderMouse.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\AbilityTasks</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\Data">
       <UniqueIdentifier>{1DE59CCC-C5AD-3B72-B94D-B45AD4BE9D00}</UniqueIdentifier>
     </Filter>
@@ -198,6 +204,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h">
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\AbilitySystem\AbilityTasks">
+      <UniqueIdentifier>{4B70318B-AB04-3DCD-99BF-AE86B9C39812}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AbilityTasks\TargetDataUnderMouse.h">
+      <Filter>Source\Aura\Public\AbilitySystem\AbilityTasks</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\Data">
       <UniqueIdentifier>{FF426A13-05E2-3736-B7C4-5F4B5E95E426}</UniqueIdentifier>
