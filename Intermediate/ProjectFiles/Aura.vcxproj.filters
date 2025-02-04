@@ -88,6 +88,12 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Data\CharacterClassInfo.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Data</Filter>
     </ClCompile>
+    <Filter Include="Source\Aura\Private\AbilitySystem\ExecCalc">
+      <UniqueIdentifier>{45AAE052-C5B4-3806-8933-606C914005E1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\ExecCalc\ExecCalc_Damage.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\ExecCalc</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\ModMagCalc">
       <UniqueIdentifier>{07CB3620-4FAE-3564-9604-7B08CD93389D}</UniqueIdentifier>
     </Filter>
@@ -166,6 +172,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\UI\Widget\AuraUserWidget.cpp">
       <Filter>Source\Aura\Private\UI\Widget</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\UI\Widget\DamageTextComponent.cpp">
+      <Filter>Source\Aura\Private\UI\Widget</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\UI\WidgetController">
       <UniqueIdentifier>{D768110E-7A16-3E45-95C4-8523946E0A11}</UniqueIdentifier>
     </Filter>
@@ -222,6 +231,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\CharacterClassInfo.h">
       <Filter>Source\Aura\Public\AbilitySystem\Data</Filter>
+    </ClInclude>
+    <Filter Include="Source\Aura\Public\AbilitySystem\ExecCalc">
+      <UniqueIdentifier>{CBE49B44-EA0F-3207-9F2E-7669B93049DD}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ExecCalc\ExecCalc_Damage.h">
+      <Filter>Source\Aura\Public\AbilitySystem\ExecCalc</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\ModMagCalc">
       <UniqueIdentifier>{8949CBB1-5558-3254-991D-8D941786DDCB}</UniqueIdentifier>
@@ -299,6 +314,9 @@
       <UniqueIdentifier>{94ECFD0D-3C45-3C22-8F23-53F6B52E3FDE}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\UI\Widget\AuraUserWidget.h">
+      <Filter>Source\Aura\Public\UI\Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\UI\Widget\DamageTextComponent.h">
       <Filter>Source\Aura\Public\UI\Widget</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\UI\WidgetController">

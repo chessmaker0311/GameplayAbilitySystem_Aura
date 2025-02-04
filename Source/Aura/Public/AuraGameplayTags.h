@@ -43,6 +43,10 @@ public:
 	FGameplayTag InoputTag_2;
 	FGameplayTag InoputTag_3;
 	FGameplayTag InoputTag_4;
+
+	FGameplayTag Damage;
+
+	FGameplayTag Effects_HitReact;
 private:
 	static FAuraGameplayTags GameplayTags;
 

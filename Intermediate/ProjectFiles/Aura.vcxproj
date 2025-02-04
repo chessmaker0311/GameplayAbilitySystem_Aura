@@ -257,6 +257,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\ExecCalc\ExecCalc_Damage.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\ModMagCalc\MMC_MaxHealth.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -337,6 +342,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\UI\Widget\DamageTextComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\UI\WidgetController\AttributeMenuWidgetController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -362,6 +372,7 @@
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AbilityTasks\TargetDataUnderMouse.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\AttributeInfo.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\CharacterClassInfo.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ExecCalc\ExecCalc_Damage.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ModMagCalc\MMC_MaxHealth.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\ModMagCalc\MMC_MaxMana.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraEffectActor.h"/>
@@ -378,6 +389,7 @@
     <ClInclude Include="..\..\Source\Aura\Public\Player\AuraPlayerState.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\UI\HUD\AuraHUD.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\UI\Widget\AuraUserWidget.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\UI\Widget\DamageTextComponent.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\UI\WidgetController\AttributeMenuWidgetController.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\UI\WidgetController\AuraWidgetController.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\UI\WidgetController\OverlayWidgetController.h"/>
