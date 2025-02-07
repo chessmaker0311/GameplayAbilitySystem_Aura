@@ -207,6 +207,11 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\Aura\Aura.h"/>
+    <ClCompile Include="..\..\Source\Aura\Private\AuraAbilityTypes.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AuraAssetManager.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -222,12 +227,22 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAbilitySystemGlobals.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAbilitySystemLibrary.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AuraAttributeSet.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraDamageGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
@@ -362,11 +377,14 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClInclude Include="..\..\Source\Aura\Public\AuraAbilityTypes.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AuraAssetManager.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AuraGameplayTags.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAbilitySystemComponent.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAbilitySystemGlobals.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAbilitySystemLibrary.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AuraAttributeSet.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraDamageGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AbilityTasks\TargetDataUnderMouse.h"/>
