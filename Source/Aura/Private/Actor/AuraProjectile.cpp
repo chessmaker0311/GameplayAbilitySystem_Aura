@@ -56,11 +56,8 @@ void AAuraProjectile::Destroyed()
 void AAuraProjectile::OnSphereOverlapped(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	//Hit OwnCharacer and Spawn NiagaraEffect before DamageEffectEffectHandle Is Valid
-	//So Add If Code (It is not code In Course - 162)
-	if (!DamageEffectSpecHandle.Data.IsValid())
-		return;
-
-	if (DamageEffectSpecHandle.Data.IsValid() && DamageEffectSpecHandle.Data.Get()->GetContext().GetEffectCauser() == OtherActor)
+	
+	if (!DamageEffectSpecHandle.Data.IsValid() || DamageEffectSpecHandle.Data.Get()->GetContext().GetEffectCauser() == OtherActor)
 		return;
 	if (!UAuraAbilitySystemLibrary::IsNotFriend(DamageEffectSpecHandle.Data.Get()->GetContext().GetEffectCauser(), OtherActor))
 		return;
