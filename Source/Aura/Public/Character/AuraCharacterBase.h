@@ -13,6 +13,7 @@ class UAttributeSet;
 class UGameplayEffect;
 class UGameplayAbility;
 class UAnimMontage;
+class UNiagaraSystem;
 
 UCLASS(Abstract)
 class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInterface,public ICombatInterface
@@ -27,10 +28,12 @@ public:
 	/**Combat Interface*/
 	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
 	virtual void Die() override;
-	virtual FVector GetCombotSocketLocation_Implementation(const FGameplayTag& MontageTag) override;
+	virtual FVector GetCombatSocketLocation_Implementation(const FGameplayTag& MontageTag) override;
 	virtual bool IsDead_Implementation() const override;
 	virtual AActor* GetAvatar_Implementation() override;
 	virtual TArray<FTaggedMontage> GetAttackMontages_Implementation() override;
+	virtual UNiagaraSystem* GetBloodEffect_Implementation() override;
+	virtual FTaggedMontage GetTaggedMontageByTag_Implementation(const FGameplayTag& MontageTag) override;
 	/**end Combat Interface*/
 
 	UFUNCTION(NetMulticast, Reliable)
@@ -80,13 +83,13 @@ protected:
 	bool bDead = false;
 
 	/** Dissolve Effects*/
-	void Dissovle();
+	void Dissolve();
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void StartDissovleTimeline(UMaterialInstanceDynamic* DynamicMaterialInstance);
+	void StartDissolveTimeline(UMaterialInstanceDynamic* DynamicMaterialInstance);
 
 	UFUNCTION(BlueprintImplementableEvent)
-	void StartWeaponDissovleTimeline(UMaterialInstanceDynamic* DynamicMaterialInstance);
+	void StartWeaponDissolveTimeline(UMaterialInstanceDynamic* DynamicMaterialInstance);
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TObjectPtr<UMaterialInstance> DissolveMaterialInstance;
@@ -94,6 +97,12 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	TObjectPtr<UMaterialInstance> WeaponDissolveMaterialInstance;
 	/** end Dissolve Effects*/
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UNiagaraSystem* BloodEffect;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	USoundBase* DeathSound;
 private:
 	UPROPERTY(EditAnywhere, Category="Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> StartupAbilities;

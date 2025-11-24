@@ -16,7 +16,7 @@ struct FAuraGameplayTags
 {
 public:
 	static const FAuraGameplayTags& Get() { return GameplayTags; }
-	static void initializeNativeGameplayTag();
+	static void InitializeNativeGameplayTags();
 
 	//Primary Attributes
 	FGameplayTag Attributes_Primary_Strength;
@@ -43,11 +43,11 @@ public:
 
 	//Input Tags
 	FGameplayTag InputTag_LMB;
-	FGameplayTag InoputTag_RMB;
-	FGameplayTag InoputTag_1;
-	FGameplayTag InoputTag_2;
-	FGameplayTag InoputTag_3;
-	FGameplayTag InoputTag_4;
+	FGameplayTag InputTag_RMB;
+	FGameplayTag InputTag_1;
+	FGameplayTag InputTag_2;
+	FGameplayTag InputTag_3;
+	FGameplayTag InputTag_4;
 
 	FGameplayTag Damage;
 	FGameplayTag Damage_Fire;
@@ -57,11 +57,16 @@ public:
 
 	FGameplayTag Abilities_Attack;
 
-	FGameplayTag Montage_Attack_Weapon;
-	FGameplayTag Montage_Attack_RightHand;
-	FGameplayTag Montage_Attack_LeftHand;
+	FGameplayTag CombatSocket_Weapon;
+	FGameplayTag CombatSocket_RightHand;
+	FGameplayTag CombatSocket_LeftHand;
 
-	TMap<FGameplayTag, FGameplayTag> DamageTypesToResistance;
+	FGameplayTag Montage_Attack_1;
+	FGameplayTag Montage_Attack_2;
+	FGameplayTag Montage_Attack_3;
+	FGameplayTag Montage_Attack_4;
+
+	TMap<FGameplayTag, FGameplayTag> DamageTypesToResistances;
 
 	FGameplayTag Effects_HitReact;
 private:

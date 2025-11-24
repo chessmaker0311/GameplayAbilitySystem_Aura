@@ -6,13 +6,13 @@
 
 FAuraGameplayTags FAuraGameplayTags::GameplayTags;
 
-void FAuraGameplayTags::initializeNativeGameplayTag()
+void FAuraGameplayTags::InitializeNativeGameplayTags()
 {
 	//Primary Attributes
 	GameplayTags.Attributes_Primary_Strength = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Primary.Strength"), FString("Increases physical damage"));
 	GameplayTags.Attributes_Primary_Intelligence = UGameplayTagsManager::Get().AddNativeGameplayTag(
-		FName("Attributes.Primary.Intalligence"), FString("Increases magical damage"));
+		FName("Attributes.Primary.Intelligence"), FString("Increases magical damage"));
 	GameplayTags.Attributes_Primary_Resilience = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Attributes.Primary.Resilience"), FString("Increase Armor and Armor Penetration"));
 	GameplayTags.Attributes_Primary_Vigor = UGameplayTagsManager::Get().AddNativeGameplayTag(
@@ -43,15 +43,15 @@ void FAuraGameplayTags::initializeNativeGameplayTag()
 	//Input Tags
 	GameplayTags.InputTag_LMB = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.LMB"), FString("Input Tag for Left Mouse Button"));
-	GameplayTags.InoputTag_RMB = UGameplayTagsManager::Get().AddNativeGameplayTag(
+	GameplayTags.InputTag_RMB = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.RMB"), FString("Input Tag for Right Mouse Button"));
-	GameplayTags.InoputTag_1 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+	GameplayTags.InputTag_1 = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.1"), FString("Input Tag for 1 key"));
-	GameplayTags.InoputTag_2 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+	GameplayTags.InputTag_2 = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.2"), FString("Input Tag for 2 key"));
-	GameplayTags.InoputTag_3 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+	GameplayTags.InputTag_3 = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.3"), FString("Input Tag for 3 key"));
-	GameplayTags.InoputTag_4 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+	GameplayTags.InputTag_4 = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("InputTag.4"), FString("Input Tag for 4 key"));
 
 	GameplayTags.Damage = UGameplayTagsManager::Get().AddNativeGameplayTag(
@@ -65,7 +65,7 @@ void FAuraGameplayTags::initializeNativeGameplayTag()
 	GameplayTags.Damage_Arcane = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Damage.Arcane"), FString("Arcane Damage Type"));
 	GameplayTags.Damage_Physical = UGameplayTagsManager::Get().AddNativeGameplayTag(
-		FName("Damage.Phisical"), FString("Phisical Damage Type"));
+		FName("Damage.Physical"), FString("Physical Damage Type"));
 
 	//Resistances
 	GameplayTags.Attributes_Resistance_Fire = UGameplayTagsManager::Get().AddNativeGameplayTag(
@@ -78,10 +78,10 @@ void FAuraGameplayTags::initializeNativeGameplayTag()
 		FName("Attributes.Resistance.Physical"), FString("Resistance to Physical damage"));
 
 	//Map of Damage Type to Resistances
-	GameplayTags.DamageTypesToResistance.Add(GameplayTags.Damage_Fire, GameplayTags.Attributes_Resistance_Fire);
-	GameplayTags.DamageTypesToResistance.Add(GameplayTags.Damage_Lightning, GameplayTags.Attributes_Resistance_Lightning);
-	GameplayTags.DamageTypesToResistance.Add(GameplayTags.Damage_Arcane, GameplayTags.Attributes_Resistance_Arcane);
-	GameplayTags.DamageTypesToResistance.Add(GameplayTags.Damage_Physical, GameplayTags.Attributes_Resistance_Physical);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Fire, GameplayTags.Attributes_Resistance_Fire);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Lightning, GameplayTags.Attributes_Resistance_Lightning);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Arcane, GameplayTags.Attributes_Resistance_Arcane);
+	GameplayTags.DamageTypesToResistances.Add(GameplayTags.Damage_Physical, GameplayTags.Attributes_Resistance_Physical);
 
 	//Effect
 	GameplayTags.Effects_HitReact = UGameplayTagsManager::Get().AddNativeGameplayTag(
@@ -91,11 +91,21 @@ void FAuraGameplayTags::initializeNativeGameplayTag()
 	GameplayTags.Abilities_Attack = UGameplayTagsManager::Get().AddNativeGameplayTag(
 		FName("Ability.Attack"), FString("Attack Ability Tag"));
 
+	//CombatSocket
+	GameplayTags.CombatSocket_Weapon = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("CombatSocket.Weapon"), FString("Weapon"));
+	GameplayTags.CombatSocket_RightHand = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("CombatSocket.RightHand"), FString("RightHand"));
+	GameplayTags.CombatSocket_LeftHand = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("CombatSocket.LeftHand"), FString("LeftHand"));
+
 	//Montage
-	GameplayTags.Montage_Attack_Weapon = UGameplayTagsManager::Get().AddNativeGameplayTag(
-		FName("Montage.Attack.Weapon"), FString("Weapon"));
-	GameplayTags.Montage_Attack_RightHand = UGameplayTagsManager::Get().AddNativeGameplayTag(
-		FName("Montage.Attack.RightHand"), FString("Weapon"));
-	GameplayTags.Montage_Attack_LeftHand = UGameplayTagsManager::Get().AddNativeGameplayTag(
-		FName("Montage.Attack.LeftHand"), FString("Weapon"));
+	GameplayTags.Montage_Attack_1 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Montage.Attack.1"), FString("Attack_1"));
+	GameplayTags.Montage_Attack_2 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Montage.Attack.2"), FString("Attack_2"));
+	GameplayTags.Montage_Attack_3 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Montage.Attack.3"), FString("Attack_3"));
+	GameplayTags.Montage_Attack_4 = UGameplayTagsManager::Get().AddNativeGameplayTag(
+		FName("Montage.Attack.4"), FString("Attack_4"));
 }
