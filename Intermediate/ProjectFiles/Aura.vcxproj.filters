@@ -85,6 +85,9 @@
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraProjectileSpell.cpp">
       <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraSummonAbility.cpp">
+      <Filter>Source\Aura\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <Filter Include="Source\Aura\Private\AbilitySystem\AbilityTasks">
       <UniqueIdentifier>{C3A9FB8B-DD1A-3A80-8CF7-326C27A917BC}</UniqueIdentifier>
     </Filter>
@@ -128,6 +131,12 @@
       <UniqueIdentifier>{F8F1ABC1-CC51-3FC3-9A9D-250AB535F8BA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Aura\Private\AI\AuraAIController.cpp">
+      <Filter>Source\Aura\Private\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\BTService_FindNearestPlayer.cpp">
+      <Filter>Source\Aura\Private\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\BTTask_Attack.cpp">
       <Filter>Source\Aura\Private\AI</Filter>
     </ClCompile>
     <Filter Include="Source\Aura\Private\Character">
@@ -247,6 +256,9 @@
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h">
       <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraSummonAbility.h">
+      <Filter>Source\Aura\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <Filter Include="Source\Aura\Public\AbilitySystem\AbilityTasks">
       <UniqueIdentifier>{4B70318B-AB04-3DCD-99BF-AE86B9C39812}</UniqueIdentifier>
     </Filter>
@@ -290,6 +302,12 @@
       <UniqueIdentifier>{E396299D-B63E-3AFD-B1BD-92175877A8E0}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Aura\Public\AI\AuraAIController.h">
+      <Filter>Source\Aura\Public\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\BTService_FindNearestPlayer.h">
+      <Filter>Source\Aura\Public\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\BTTask_Attack.h">
       <Filter>Source\Aura\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\Aura\Public\Character">

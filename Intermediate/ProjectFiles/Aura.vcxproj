@@ -262,6 +262,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\Abilities\AuraSummonAbility.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AbilitySystem\AbilityTasks\TargetDataUnderMouse.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -303,6 +308,16 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="..\..\Source\Aura\Private\AI\AuraAIController.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\BTService_FindNearestPlayer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Aura\Private\AI\BTTask_Attack.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
@@ -398,6 +413,7 @@
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraMeleeAttack.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraProjectileSpell.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Abilities\AuraSummonAbility.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\AbilityTasks\TargetDataUnderMouse.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\AttributeInfo.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AbilitySystem\Data\CharacterClassInfo.h"/>
@@ -407,6 +423,8 @@
     <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraEffectActor.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\Actor\AuraProjectile.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\AI\AuraAIController.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\BTService_FindNearestPlayer.h"/>
+    <ClInclude Include="..\..\Source\Aura\Public\AI\BTTask_Attack.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\Character\AuraCharacter.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\Character\AuraCharacterBase.h"/>
     <ClInclude Include="..\..\Source\Aura\Public\Character\AuraEnemy.h"/>
